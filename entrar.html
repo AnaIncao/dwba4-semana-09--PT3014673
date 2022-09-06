@@ -6,8 +6,8 @@
 
     <link rel='shortcut icon' href='https://raw.githubusercontent.com/DWBA4/dwba4_semana_imagens/master/favicon.ico' type='image/x-icon'/>
     
-    <title>Gestão Tecnologia da Informação - IFSP - Pirituba</title>
-
+    <title>Entrar - IFSP - Pirituba</title>
+    
     <script src="js/disabling.js"></script>
   </head>
 
@@ -21,15 +21,25 @@
     </header> 
     
     <main>
-      <strong>Especialização em Gestão da Tecnologia da Informação</strong> 
-      <br/>
-      <br/>
-      <p>
-        <em>Objetivo Geral:</em>
-        <br/>
-          Atualizar e instrumentalizar o discente no que tange à gerência de equipes, tomada de decisão, elaboração de estratégias inovadoras e adaptação aos novos cenários econômicos, tecnológicos e sociais, bem como formar gestores competentes do ponto de vista ético e técnico, com perfil proativo, dinâmico e crítico, capaz e atuar no mercado na gestão de equipes que atuam na área de tecnologia da informação.
-      </p>
-    </main>
+      <h1>Entrar</h1>
+      <form method = "POST">
+        <!--usuário-->
+        <label for="entrar_usuario">Usuário</label>
+        <input name="usuario" id="entrar_usuario" required> 
+        <br/> <br/>
+        
+        <!--senha-->
+        <label for="entrar_senha">Senha</label>
+        <input type="password" name="senha" id="entrar_senha" required>
+        <br/> <br/>
+        
+        <!--botão-->
+        <div>
+          <button type='submit'>Entrar</button>
+          <a href="">Esqueci a senha </a>
+        </div>
+      </form>
+    </main>  
     
     <footer>
       <!--rodape-->
@@ -37,7 +47,7 @@
         <object width="100%" height="200" data="rodape.html"></object>
       </nav> 
     </footer>
-    
+      
     <!-- replit -->
     <script src="script.js"></script>
     <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer>       </script> 
