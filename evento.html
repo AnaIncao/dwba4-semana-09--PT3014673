@@ -9,6 +9,8 @@
     <title>Eventos - IFSP - Pirituba</title>
     
     <script src="js/disabling.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -24,8 +26,8 @@
       <form method = "POST">
         <!-- seleciona evento  -->
         <fieldset>
-          Evento
-          <select name="assunto" required>
+          <label for="evento_selecao">Evento</label>
+          <select name="assunto" id= "evento_assunto" required>
             <option value> -- Selecione -- </option>
             <option value="VA">Veo sem asas</option>
             <option value="FJ">Festa junina</option>
@@ -62,8 +64,8 @@
           <br/><br/>
           
           <!--celular -->
-          <label for="evento_celular">Celular</label>
-          <input type="tel" name="celular" id='evento_celular'> (99) 99999-9999
+          <label for="evento_celular">Celular (99) 99999-9999</label>
+          <input type="tel" name="celular" id='evento_celular'> 
           <br/><br/>
           
           <!-- Sexo -->
@@ -96,8 +98,8 @@
         <!-- botão -->
         <div>
           <br/>
-          <button type='submit'>Inscrever</button>
-          <button type='reset'>Limpar</button>
+          <button class=button type='submit'>Inscrever-se</button> <br><br>
+          <button class=button type='reset'>Limpar</button>
         </div>
       </form>
     </main>

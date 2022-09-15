@@ -9,6 +9,8 @@
     <title>Entrar - IFSP - Pirituba</title>
     
     <script src="js/disabling.js"></script>
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -24,20 +26,25 @@
       <h1>Entrar</h1>
       <form method = "POST">
         <!--usuário-->
-        <label for="entrar_usuario">Usuário</label>
-        <input name="usuario" id="entrar_usuario" required> 
-        <br/> <br/>
+        <fieldset class= "entrar_form">
+          <label for="entrar_usuario">Usuário</label>
+          <input name="usuario" id="entrar_usuario" required> 
+        </fieldset>
+        <br/> 
         
-        <!--senha-->
+        <fieldset class= "entrar_form"><!--senha-->
         <label for="entrar_senha">Senha</label>
         <input type="password" name="senha" id="entrar_senha" required>
-        <br/> <br/>
+        </fieldset>
+        <br/>
         
         <!--botão-->
-        <div>
-          <button type='submit'>Entrar</button>
-          <a href="">Esqueci a senha </a>
-        </div>
+        <fieldset class= "entrar_form">
+          <div>
+            <button class= "button" type='submit'>Entrar</button>
+            <a href="">Esqueci a senha </a>
+          </div>
+        </fieldset>
       </form>
     </main>  
     
