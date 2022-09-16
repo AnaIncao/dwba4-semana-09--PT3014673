@@ -1,50 +1,43 @@
-html, body {
+/*html, body {
   height: 100%;
   width: 100%;
-}
+}*/
 
 .center {
   text-align: center;
 }
 
-img{
-    border-radius: 50%;
-    width: 50%;
-  }
 
 figcaption{
-  border: 1px dotted gray;
-  border-width: 75%;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-
-/*estilo formularios*/
-
-.button{
-  color: white;
-  background-color: green;
+  border: 1px dotted blue;
   text-align: center;
-  border-radius: 5px;
-  border: none;
-  padding: 15px 15px;
-  width: 100%;
-  cursor: pointer;
 }
 
-select, input[type="email"], input[type='tel'], input[type='url'], textarea#mensagem{
-  border-radius: 5px;
-  border-color: lightgray;
-  padding: 15px 15px;
-  margin: 7px 0;
-  width: 97%;
-}  
 
-.entrar_form{
-  border: none;
-  border-radius: 5px;
-  padding: 20px 15px;
-  width: 97%;
-  background-color: #ededed;
+/*Grid Layout*/
+
+*{
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px 100px;  
+  padding: 10px;
+  margin:10px 100px;
+}
+
+.item1, .item2 {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+}
+
+.item3, .item4 {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
 }
